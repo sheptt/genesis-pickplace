@@ -1,0 +1,19 @@
+# Downloaded data, derived datasets, and generated results
+/data/
+/outputs/
+*.mp4
+*.pt
+*.log
+
+# Local Python / notebook / editor state
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

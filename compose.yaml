@@ -1,0 +1,17 @@
+services:
+  lab:
+    build: .
+    init: true
+    ports:
+      - "127.0.0.1:8888:8888"
+    volumes:
+      - .:/workspace
+      - genesis-cache:/home/learner/.cache
+    shm_size: "2gb"
+    environment:
+      PYOPENGL_PLATFORM: egl
+      EGL_PLATFORM: surfaceless
+      LIBGL_ALWAYS_SOFTWARE: "1"
+      OMP_NUM_THREADS: "4"
+volumes:
+  genesis-cache:
